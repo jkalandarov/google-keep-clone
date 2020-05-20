@@ -1,12 +1,14 @@
 import React from 'react';
+import notes from '../notes';
 
-const Note =()=> {
+const Note =props=> {
     return (
         <div className='note'>
-            <h1 contentEditable="true">This is the note title</h1>
-            <p contentEditable="true">This is the note content</p>
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
         </div>
     );
 }
+
 
 export default Note;
